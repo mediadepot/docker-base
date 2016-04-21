@@ -12,5 +12,3 @@ RUN apk --update --no-cache add \
     python python-dev py-pip && \
     mkdir ~/.ssh && \
     ssh-keyscan github.com >> ~/.ssh/known_hosts && \
-
-CMD ["sh"]

@@ -11,5 +11,3 @@ RUN apk --update --no-cache add \
     openssl-dev libxml2-dev libxslt-dev openssh git && \
     mkdir ~/.ssh && \
     ssh-keyscan github.com >> ~/.ssh/known_hosts && \
-
-CMD ["sh"]

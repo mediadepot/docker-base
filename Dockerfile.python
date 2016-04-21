@@ -8,7 +8,7 @@ WORKDIR /srv/
 
 RUN apk --update --no-cache add \
     build-base libc-dev linux-headers \
-    openssl-dev libxml2-dev libxslt-dev openssh git && \
+    openssl-dev libxml2-dev libxslt-dev openssh \
     python python-dev py-pip && \
     mkdir ~/.ssh && \
     ssh-keyscan github.com >> ~/.ssh/known_hosts

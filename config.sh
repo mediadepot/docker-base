@@ -5,4 +5,4 @@ PGID=${PGID:=15000}
 PGROUP=${PGROUP:=mediadepot}
 
 #Create internal mediadepot user (which will be mapped to external user and used to run the process)
-addgroup -g $PGID $PGROUP  && adduser -D -u $PUID -G $PGROUP $PUSER
+addgroup -g $PGID $PGROUP  && adduser -D -u $PUID -G $PGROUP -s /bin/sh $PUSER

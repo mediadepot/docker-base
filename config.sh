@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 PUID=${PUID:=15000}
 PGID=${PGID:=15000}
 

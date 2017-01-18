@@ -1,11 +1,12 @@
-FROM alpine
+FROM debian:jessie-slim
 MAINTAINER Jason Kulatunga <jason@thesparktree.com>
 
 WORKDIR /srv/
-ADD ./alpine.config.sh /srv/config.sh
+ADD ./debian.config.sh /srv/config.sh
 RUN chmod u+x  /srv/config.sh
 
-RUN apk --update --no-cache add \
-    openssh git && \
+RUN apt-get update && apt-get install -y \
+    git && \
+    rm -rf /var/lib/apt/lists/* && \
     mkdir ~/.ssh && \
     ssh-keyscan github.com >> ~/.ssh/known_hosts

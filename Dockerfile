@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.8
 MAINTAINER Jason Kulatunga <jason@thesparktree.com>
 
 # root filesystem

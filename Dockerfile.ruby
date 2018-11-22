@@ -1,4 +1,4 @@
-FROM ruby:2.1.8-alpine
+FROM ruby:2.4.5-alpine3.8
 MAINTAINER Jason Kulatunga <jason@thesparktree.com>
 
 # root filesystem
